@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Demo Slider</title>
+	</head>
+	<body>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+
+			.swiper {
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.swiper-slide span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #000000;
+				background-color: #ffffff66;
+				padding: 1rem;
+			}
+		</style>
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<span>Slide 1</span
+					><img
+						src="https://picsum.photos/1080/1920?random=1"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 2</span
+					><img
+						src="https://picsum.photos/1080/1920?random=2"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 3</span
+					><img
+						src="https://picsum.photos/1080/1920?random=3"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 4</span
+					><img
+						src="https://picsum.photos/1080/1920?random=4"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 5</span
+					><img
+						src="https://picsum.photos/1080/1920?random=5"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 6</span
+					><img
+						src="https://picsum.photos/1080/1920?random=6"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 7</span
+					><img
+						src="https://picsum.photos/1080/1920?random=7"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 8</span
+					><img
+						src="https://picsum.photos/1080/1920?random=8"
+						alt=""
+					/>
+				</div>
+				<div class="swiper-slide">
+					<span>Slide 9</span
+					><img
+						src="https://picsum.photos/1080/1920?random=9"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'progressbar',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+</html>
